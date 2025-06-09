@@ -6,7 +6,7 @@ import AddJobPosting from '../views/AddJobPosting.vue'
 const routes = [
   { path: '/', component: Home },
   { path: '/jobposting', component: JobPosting },
-  { path: '/add_employee', component: AddJobPosting },
+  { path: '/jobposting/add', component: AddJobPosting },
 ]
 
 const router = createRouter({

@@ -2,7 +2,7 @@
   <div>
     <h2>job List</h2>
     <ul>
-      <li v-for="job in jobposting" :key="id">
+      <li v-for="job in jobposting" :key="job.id">
         {{ job.title }} {{ job.description }}
       </li>
     </ul>
