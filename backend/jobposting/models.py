@@ -10,3 +10,6 @@ class JobPosting(models.Model):
 
     class Meta:
         db_table = 'jobposting'  # 👈 This tells Django to use your existing table
+
+    def __str__(self):
+        return f"{self.title} | {self.company} | {'Active' if self.is_active else 'Not Active'}"

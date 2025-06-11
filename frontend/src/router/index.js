@@ -14,6 +14,12 @@ const routes = [
   path: '/jobposting/details/:id',
   name: 'JobDetails',
   component: () => import('@/views/JobPostingDetails.vue')
+},
+ {
+  path: '/admin',
+  component: {
+    template: '<div>This route is handled by Django. Go to <a href="http://localhost:8000/admin">http://localhost:8000/admin</a>.</div>'
+  }
 }
 ]
 
